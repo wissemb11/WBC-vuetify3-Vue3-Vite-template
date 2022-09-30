@@ -164,98 +164,9 @@ export default {
         },
       },
       languages: ["en", "es", "fr"],
-      //  GWBC2:{
-      //     comp:'VSelect',
-      //     props:{
-      //         items:[1,2,3,4],
-      //        class:'bg-purple-darken-2 text-center text-h1',
-      //         html:'dddd',
-      //         val:''
-      //     }
-      // },
-      types: [
-        "button",
-        "checkbox",
-        "color",
-        "date",
-        "datetime-local",
-        "email",
-        "hidden",
-        "image",
-        "month",
-        "number",
-        "password",
-        "radio",
-        "range",
-        "reset",
-        "search",
-        "submit",
-        "tel",
-        "text",
-        "time",
-        "url",
-        "week",
-      ],
-      GWBC0: {
-        comp: "input",
-        props: {
-          hide: !true,
-          key: "key-A",
-          name: "name-A",
-          type: "text",
-          val: "",
-          html: `[[stylish bla bla|{'style':{'color':'white'}}|aaaaaaaaaaaa]]`,
-          style: { color: "green", backgroundColor: "red" },
-        },
-      },
-      GWBC1: {
-        comp: "input",
-        props: {
-          hide: !true,
-          key: "key-A",
-          name: "name-A",
-          type: "checkbox",
-          val: true,
-          checked: true,
-          html: `[[stylish bla bla|{"style":{"color":"white"}}|aaaaaaaaaaaa]]`,
-          style: { color: "green", backgroundColor: "red" },
-        },
-      },
-      GWBCList: [],
-      generalPageData: [
-        9999,
-        "[[ali va a l ecole||]]",
-        "[[ali va a l ecole||]]",
-        "[[ali va a l ecole||]]",
-        "[[ali va a l ecole||]]",
-      ],
-      // item_:{
-      //   comp:['int'],
-      //   props:{},
-      //   int:555
-      // }
     };
   },
-  computed: {
-    // ...Vuex.mapGetters(['urlServer', 'user', 'loggedIn', 'lg', 'club']),
-  },
-  components: {},
-  mounted() {
-    this.GWBCList = this.types.map((e) => ({
-      comp: "input",
-      props: {
-        hide: !true,
-        key: "key-A",
-        name: "name-A",
-        val: "",
-        type: e,
-        html: `[[it s ${e}-type|{"style":{"color":"white"}}|aaaaaaaaaaaa]]`,
-        style: { color: "green", backgroundColor: "red" },
-        value: "sssss",
-      },
-    }));
-    // alert('{"a":10}'.toJSON());
-  },
+  mounted() {},
   methods: {
     onLanguageChange(lang) {
       alert("new lang" + lang);

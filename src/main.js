@@ -4,7 +4,7 @@ import vuetify from "./plugins/vuetify";
 import { loadFonts } from "./plugins/webfontloader";
 
 loadFonts();
-
+import "./assets/main.css";
 //////////////////////////The Vue APP named WBCApp/////////////////////////////
 
 //creation of Vue APP named WBCApp
@@ -20,7 +20,6 @@ import * as directives from "vuetify/directives";
 WBCApp.use(vuetify);
 
 WBCApp.use(WBC_plugin, { ...components });
-alert(JSON.stringify(components));
 
 // Mount Vue application to the element id
 WBCApp.mount("#app");
